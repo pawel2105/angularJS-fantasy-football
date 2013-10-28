@@ -1,0 +1,12 @@
+<div ng-controller="LeaguesController" ng-init="find()">
+  <ul class="unstyled">
+    <h2>Leagues</h2>
+    <li ng-repeat="league in leagues">
+      <a href="#!/leagues/{{ league._id }}">{{ league.name }}</a>
+      <a href="#!/leagues/{{ league._id }}/edit">Edit</a>
+      <a href="" ng-click="destroy(league)">Remove</a>
+    </li>
+  </ul>
+  <br />
+  <a href="#!/leagues/create">Create a new league</a>
+</div

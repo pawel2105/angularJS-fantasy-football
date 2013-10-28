@@ -1,0 +1,12 @@
+<div ng-controller="FantasyTeamsController" ng-init="find()">
+  <ul class="unstyled">
+    <h2>Fantasy Teams</h2>
+      <li ng-repeat="fantasyteam in fantasyteams">
+        <a href="#!/fantasyteams/{{ fantasyteam._id }}">{{ fantasyteam.name }}</a>
+        (<a href="#!/fantasyteams/{{ fantasyteam._id }}/edit">Edit</a>)
+        (<a href="" ng-click="remove(fantasyteam)" >Remove</a>)
+      </li>
+  </ul>
+  <br>
+  <a href="#!/fantasyteams/create">Create a new fantasy team</a>
+</div>
