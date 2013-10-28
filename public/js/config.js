@@ -2,6 +2,8 @@
 window.app.config(['$routeProvider', function($routeProvider) {
 	$routeProvider
 	.when('/', { templateUrl: 'views/index.html' })
+  .when('/nflteams', { templateUrl: 'views/nfl/list.html' })
+  .when('/nflteams/:nflTeamId', { templateUrl: 'views/nfl/view.html' })
 	.otherwise({redirectTo: '/'});
 }]);
 

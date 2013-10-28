@@ -1,5 +1,5 @@
 window.angular.module('ngff.controllers.header', [])
-  .controller('HeaderController', [
-    function() {
-
+  .controller('HeaderController', ['$scope', 'Global',
+    function($scope, Global) {
+      $scope.global = Global;
     }]);
