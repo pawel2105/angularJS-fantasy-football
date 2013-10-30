@@ -5,3 +5,15 @@ window.angular.module('ngff.directives', [])
       templateUrl: "views/players/positionselect.html"
     };
   })
+  .directive('nflteams', function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/players/nflteamselect.html"
+    };
+  })
+  .directive('searchlimit', function() {
+    return {
+      restrict: "E",
+      templateUrl: "views/players/searchlimitselect.html"
+    };
+  })

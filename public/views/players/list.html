@@ -1,3 +1,9 @@
 <div ng-controller="PlayersController">
   <positions></positions>
+  <nflteams></nflteams>
+  <searchlimit></searchlimit>
+</div>
+
+<div ng-controller="PlayersController" ng-init="find()">
+  <div ng-repeat="player in players">{{ player.name }}</div>
 </div>
