@@ -12,6 +12,7 @@ window.app.config(['$routeProvider', function($routeProvider) {
   .when('/fantasyteams/create', { templateUrl: 'views/fantasyteams/create.html' })
   .when('/fantasyteams/:fantasyTeamId/edit', { templateUrl: 'views/fantasyteams/edit.html' })
   .when('/fantasyteams/:fantasyTeamId', { templateUrl: 'views/fantasyteams/view.html' })
+  .when('/players', { templateUrl: 'views/players/list.html' })
 	.otherwise({redirectTo: '/'});
 }]);
 
