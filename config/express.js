@@ -3,7 +3,7 @@
  */
 
 var express = require('express')
-  , mongoStore = require('connect-mongo')(express)
+  , mongoStore = require('connect-mongo/es5')(express)
   , flash = require('connect-flash')
   , helpers = require('view-helpers')
 
